@@ -1,0 +1,24 @@
+---
+title: "Developing Data Products Week 2"
+author: "LJN"
+date: "October 30, 2016"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+library(leaflet)
+my_map <- my_map %>%
+  addTiles()
+my_map
+```
+
+```{r}
+library("leaflet")
+my_map <- my_map %>%
+  addMarkers(lat= 41.8781, lng= 87.6298,
+             popup="Chicago")
+my_map
+
+```
+
+
